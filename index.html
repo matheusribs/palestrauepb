@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRASA — Café de Origem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__logo">BRASA</div>
+    <nav class="nav__links">
+      <a href="#origens">Origens</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="nav__cta">Comprar</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">✕</button>
+    <nav class="mobile-menu__links">
+      <a href="#origens">Origens</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a href="#produtos" class="btn btn--light mobile-menu__cta">Ver Produtos</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-text">CAFÉ</div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Torrefação Artesanal</p>
+      <h1 class="hero__title">
+        O café que <em>acende</em><br />seus sentidos.
+      </h1>
+      <p class="hero__subtitle">
+        Grãos selecionados das melhores origens do Brasil,<br />
+        torrados com precisão e entregues frescos na sua porta.
+      </p>
+      <div class="hero__actions">
+        <a href="#produtos" class="btn btn--primary">Explorar Blend</a>
+        <a href="#processo" class="btn btn--ghost">Como fazemos</a>
+      </div>
+    </div>
+    <div class="hero__badge">
+      <svg viewBox="0 0 100 100" class="hero__badge-ring">
+        <path id="textPath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+        <text font-size="11.5">
+          <textPath href="#textPath">TORRADO ARTESANALMENTE • DESDE 2018 • </textPath>
+        </text>
+      </svg>
+      <span class="hero__badge-icon">✦</span>
+    </div>
+    <div class="hero__scroll">
+      <span>Rolar</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="stats">
+    <div class="stats__item">
+      <span class="stats__num" data-target="12">0</span>
+      <span class="stats__label">Origens</span>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__item">
+      <span class="stats__num" data-target="48000">0</span>
+      <span class="stats__label">Sacas / ano</span>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__item">
+      <span class="stats__num" data-target="98">0</span>
+      <span class="stats__label">% Satisfação</span>
+    </div>
+  </section>
+
+  <!-- ORIGENS -->
+  <section class="origens" id="origens">
+    <div class="section-header">
+      <p class="section-eyebrow">De onde vem o sabor</p>
+      <h2 class="section-title">Nossas <em>Origens</em></h2>
+    </div>
+    <div class="origens__grid">
+      <div class="origem-card" data-reveal>
+        <div class="origem-card__img">
+          <div class="origem-card__overlay"></div>
+          <span class="origem-card__region">MG</span>
+        </div>
+        <div class="origem-card__body">
+          <h3>Chapada de Minas</h3>
+          <p>Altitude de 1.200m. Notas de caramelo, avelã e chocolate amargo.</p>
+          <span class="origem-card__score">86 pts</span>
+        </div>
+      </div>
+      <div class="origem-card" data-reveal>
+        <div class="origem-card__img origem-card__img--2">
+          <div class="origem-card__overlay"></div>
+          <span class="origem-card__region">BA</span>
+        </div>
+        <div class="origem-card__body">
+          <h3>Planalto Baiano</h3>
+          <p>Clima semiárido único. Notas de frutas vermelhas, mel e especiarias.</p>
+          <span class="origem-card__score">88 pts</span>
+        </div>
+      </div>
+      <div class="origem-card" data-reveal>
+        <div class="origem-card__img origem-card__img--3">
+          <div class="origem-card__overlay"></div>
+          <span class="origem-card__region">ES</span>
+        </div>
+        <div class="origem-card__body">
+          <h3>Montanhas do Espírito Santo</h3>
+          <p>Conilon especial. Notas de cacau, terroso e longa finalização.</p>
+          <span class="origem-card__score">85 pts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <div class="section-header">
+      <p class="section-eyebrow">Escolha seu ritual</p>
+      <h2 class="section-title">Nossos <em>Blends</em></h2>
+    </div>
+    <div class="produtos__grid">
+
+      <div class="produto-card" data-reveal>
+        <div class="produto-card__tag">Popular</div>
+        <div class="produto-card__icon">☕</div>
+        <h3 class="produto-card__name">Brasa Original</h3>
+        <p class="produto-card__desc">Blend equilibrado com notas de chocolate, caramelo e toque cítrico. Ideal para todos os métodos.</p>
+        <ul class="produto-card__notes">
+          <li>Chocolate</li><li>Caramelo</li><li>Cítrico</li>
+        </ul>
+        <div class="produto-card__footer">
+          <span class="produto-card__price">R$ 39<sup>,90</sup></span>
+          <button class="btn btn--sm">Comprar</button>
+        </div>
+      </div>
+
+      <div class="produto-card produto-card--featured" data-reveal>
+        <div class="produto-card__tag produto-card__tag--gold">Premium</div>
+        <div class="produto-card__icon">🔥</div>
+        <h3 class="produto-card__name">Brasa Reserva</h3>
+        <p class="produto-card__desc">Microlote selecionado. Torra média-clara. Notas complexas de frutas, mel e floral.</p>
+        <ul class="produto-card__notes">
+          <li>Frutas Vermelhas</li><li>Mel</li><li>Floral</li>
+        </ul>
+        <div class="produto-card__footer">
+          <span class="produto-card__price">R$ 59<sup>,90</sup></span>
+          <button class="btn btn--primary">Comprar</button>
+        </div>
+      </div>
+
+      <div class="produto-card" data-reveal>
+        <div class="produto-card__tag">Forte</div>
+        <div class="produto-card__icon">⚡</div>
+        <h3 class="produto-card__name">Brasa Intense</h3>
+        <p class="produto-card__desc">Torra escura. Corpo denso. Perfeito para espresso e quem gosta do café no seu ponto mais encorpado.</p>
+        <ul class="produto-card__notes">
+          <li>Cacau</li><li>Defumado</li><li>Terroso</li>
+        </ul>
+        <div class="produto-card__footer">
+          <span class="produto-card__price">R$ 44<sup>,90</sup></span>
+          <button class="btn btn--sm">Comprar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="section-header section-header--light">
+      <p class="section-eyebrow">Como chegamos até você</p>
+      <h2 class="section-title">O <em>Processo</em></h2>
+    </div>
+    <div class="processo__steps">
+      <div class="step" data-reveal>
+        <div class="step__number">01</div>
+        <div class="step__content">
+          <h3>Seleção na Origem</h3>
+          <p>Visitamos pessoalmente os produtores e selecionamos somente os melhores lotes, com pontuação mínima de 84 pontos.</p>
+        </div>
+      </div>
+      <div class="step__connector"></div>
+      <div class="step" data-reveal>
+        <div class="step__number">02</div>
+        <div class="step__content">
+          <h3>Torra Artesanal</h3>
+          <p>Cada lote é torrado em pequenas quantidades no nosso espaço em Belo Horizonte, com perfis de torra desenvolvidos exclusivamente para cada origem.</p>
+        </div>
+      </div>
+      <div class="step__connector"></div>
+      <div class="step" data-reveal>
+        <div class="step__number">03</div>
+        <div class="step__content">
+          <h3>Embalagem & Envio</h3>
+          <p>Embalado em até 48h após a torra, com válvula desgaseificadora para máxima frescura. Enviamos para todo o Brasil.</p>
+        </div>
+      </div>
+      <div class="step__connector"></div>
+      <div class="step" data-reveal>
+        <div class="step__number">04</div>
+        <div class="step__content">
+          <h3>Na Sua Xícara</h3>
+          <p>Fresco, aromático e cheio de personalidade. O café que merece ser saboreado, não apenas consumido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="section-header">
+      <p class="section-eyebrow">Quem já provou</p>
+      <h2 class="section-title">Histórias de <em>sabor</em></h2>
+    </div>
+    <div class="depoimentos__track" id="depoimentosTrack">
+      <div class="depoimento">
+        <p class="depoimento__text">"Nunca tomei um café tão complexo e equilibrado. O Reserva mudou minha manhã completamente."</p>
+        <div class="depoimento__author">
+          <div class="depoimento__avatar">AM</div>
+          <div>
+            <strong>Ana Martins</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="depoimento">
+        <p class="depoimento__text">"Recebi em 2 dias fresquíssimo. O aroma ao abrir o pacote já é uma experiência. Produto incrível."</p>
+        <div class="depoimento__author">
+          <div class="depoimento__avatar">RC</div>
+          <div>
+            <strong>Rafael Costa</strong>
+            <span>Recife, PE</span>
+          </div>
+        </div>
+      </div>
+      <div class="depoimento">
+        <p class="depoimento__text">"O Intense é perfeito para o meu espresso da tarde. Denso, forte e sem amargura excessiva. Vicia."</p>
+        <div class="depoimento__author">
+          <div class="depoimento__avatar">LP</div>
+          <div>
+            <strong>Lucas Pereira</strong>
+            <span>Curitiba, PR</span>
+          </div>
+        </div>
+      </div>
+      <div class="depoimento">
+        <p class="depoimento__text">"Assino o plano mensal há 8 meses. Cada entrega é uma surpresa especial. Vale cada centavo."</p>
+        <div class="depoimento__author">
+          <div class="depoimento__avatar">JS</div>
+          <div>
+            <strong>Júlia Santos</strong>
+            <span>Porto Alegre, RS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="depoimentos__controls">
+      <button id="prevBtn" class="depoimentos__btn">←</button>
+      <div class="depoimentos__dots" id="dots"></div>
+      <button id="nextBtn" class="depoimentos__btn">→</button>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contato">
+    <div class="cta-final__content">
+      <p class="section-eyebrow">Comece agora</p>
+      <h2 class="cta-final__title">Seu primeiro pedido com <em>frete grátis</em>.</h2>
+      <p class="cta-final__sub">Use o cupom <strong>BRASA10</strong> e ganhe 10% de desconto na primeira compra.</p>
+      <div class="cta-final__form">
+        <input type="email" placeholder="Seu melhor e-mail" class="cta-final__input" />
+        <button class="btn btn--primary">Quero meu café</button>
+      </div>
+      <p class="cta-final__legal">Sem spam. Apenas novidades, lançamentos e ofertas exclusivas.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">BRASA</div>
+        <p>Café de origem, torrado com amor e entregue com propósito.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Produtos</h4>
+          <a href="#">Brasa Original</a>
+          <a href="#">Brasa Reserva</a>
+          <a href="#">Brasa Intense</a>
+          <a href="#">Assinatura</a>
+        </div>
+        <div class="footer__col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre nós</a>
+          <a href="#">Origens</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 BRASA Café. Todos os direitos reservados.</span>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
